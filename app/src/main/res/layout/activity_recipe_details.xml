@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/VerticalLLOfLists"
+    tools:context="com.example.fatoumeh.shumanatorbakingapp.RecipeDetailsActivity">
+
+    <ExpandableListView
+        android:id="@+id/evl_ingredients"
+        style="@style/ListsInsideLL"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recipe_steps"
+        style="@style/ListsInsideLL"/>
+
+</LinearLayout>

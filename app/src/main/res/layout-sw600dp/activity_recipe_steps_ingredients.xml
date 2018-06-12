@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/master_list_fragment"
+        android:name="com.example.fatoumeh.shumanatorbakingapp.MasterListFragment"
+        android:layout_width="0dp"
+        android:layout_weight="0.75"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_ingredients_steps_large"
+        android:layout_width="0dp"
+        android:layout_weight="0.75"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/video_container"
+            style="@style/BasicFrameLayout"
+            android:layout_weight="3" />
+
+        <FrameLayout
+            android:id="@+id/step_instruction_container"
+            android:padding="8dp"
+            style="@style/BasicFrameLayout"
+            android:layout_weight="1.25"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75">
+            <Button
+                android:id="@+id/bt_previous"
+                android:text="@string/prev_button"
+                android:onClick="prevStep"
+                style="@style/BasicButton" />
+
+            <Button
+                android:id="@+id/bt_next"
+                android:text="@string/next_button"
+                android:onClick="nextStep"
+                style="@style/BasicButton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

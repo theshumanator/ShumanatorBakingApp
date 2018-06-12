@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="24dp"
+    app:contentPadding="16dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    android:foreground="@drawable/main_touch_selector_ripple"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_recipe_name"
+            android:contentDescription="@string/recipe_name"
+            android:gravity="center"
+            style="@style/GeneralLargeTextStyle" />
+        <TextView
+            android:id="@+id/tv_recipe_serving"
+            android:contentDescription="@string/recipe_serving"
+            style="@style/GeneralSmallTextStyle"
+            android:gravity="center" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

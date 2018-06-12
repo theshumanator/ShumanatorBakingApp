@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">ShumanatorBakingApp</string>
+    <string name="select_a_recipe_label">Select a recipe</string>
+
+    <string name="recipe_pref">RecipePref</string>
+    <string name="widget_recipe">WidgetRecipe</string>
+    <string name="recipe_parcel">RecipeParcel</string>
+    <string name="recipe_steps_id">RecipeStepsId</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="recipe_serving">Servings</string>
+    <string name="recipe_ingredients">Recipe Ingredients</string>
+    <string name="step_label">Step: </string>
+    <string name="step_id">stepId</string>
+    <string name="default_img">defaultImg</string>
+
+    <string name="playback_position">playbackPosition</string>
+    <string name="playback_state">playbackState</string>
+    <string name="scroll_position">scrollPosition</string>
+
+    <string name="prev_button">Previous Step</string>
+    <string name="next_button">Next Step</string>
+
+    <plurals name="recipe_serving_count">
+        <item quantity="zero">Serving: %d</item>
+        <item quantity="one">Serving: %d</item>
+        <item quantity="other">Servings: %d</item>
+    </plurals>
+
+    <!--network/json related-->
+    <string name="read_timeout">10000</string>
+    <string name="connect_timeout">15000</string>
+    <string name="json_id">id</string>
+    <string name="json_name">name</string>
+    <string name="json_ingredients">ingredients</string>
+    <string name="json_quantity">quantity</string>
+    <string name="json_measure">measure</string>
+    <string name="json_ingredient">ingredient</string>
+    <string name="json_steps">steps</string>
+    <string name="json_shortDescription">shortDescription</string>
+    <string name="json_description">description</string>
+    <string name="json_videoURL">videoURL</string>
+    <string name="json_thumbnailURL">thumbnailURL</string>
+    <string name="json_servings">servings</string>
+    <string name="json_image">image</string>
+
+
+    <!--errors logged/reported to user-->
+    <string name="connection_error">Oops! An error has occurred whilst fetching the recipe.
+        Pls ensure your device is online.</string>
+    <string name="http_error">Http error. Response code: </string>
+    <string name="json_error">Error parsing JSON</string>
+    <string name="json_retrieve_error">Problem retrieving the recipe JSON results: </string>
+    <string name="no_recipes">Oops! No recipes could be fetched!</string>
+    <string name="no_recipe_details">Oops! Could not display recipe details. Pls contact support</string>
+    <string name="no_recipe_video_img">Oops! No recipe video or image could be found</string>
+    <string name="no_recipe_video">Oops! No recipe video could be found</string>
+    <string name="widget_error">No ingredients available at the moment. Pls contact support</string>
+
+</resources>

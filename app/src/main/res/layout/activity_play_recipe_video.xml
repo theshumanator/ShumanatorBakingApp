@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fatoumeh.shumanatorbakingapp.PlayRecipeVideoActivity">
+
+    <FrameLayout
+        android:id="@+id/video_container"
+        style="@style/BasicFrameLayout"
+        android:layout_weight="3"/>
+
+    <FrameLayout
+        android:id="@+id/step_instruction_container"
+        style="@style/BasicFrameLayout"
+        android:padding="8dp"
+        android:layout_weight="1.25"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75">
+        <Button
+            android:id="@+id/bt_previous"
+            style="@style/BasicButton"
+            android:text="@string/prev_button"
+            android:onClick="prevStep" />
+
+        <Button
+            android:id="@+id/bt_next"
+            style="@style/BasicButton"
+            android:text="@string/next_button"
+            android:onClick="nextStep" />
+    </LinearLayout>
+
+</LinearLayout>
